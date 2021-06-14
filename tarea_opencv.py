@@ -29,7 +29,7 @@ while continuar:
         try:
             gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         except:
-            print("1 Introduzca la imagen con su extension (.jpg, .png)")
+            print("La imagen no EXISTE, intente de nuevo")
             continue 
                   
        
