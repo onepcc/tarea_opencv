@@ -27,13 +27,13 @@ while continuar:
        
        #Tratando de capturar cuando se introduce una imagen que no existe
         try:
-            image is None
+            gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         except:
-            print("Introduzca la imagen con su extension (.jpg, .png)")
-            continuar = False
+            print("1 Introduzca la imagen con su extension (.jpg, .png)")
+            continue 
+                  
        
-       
-        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        # gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
         # Detect faces in the image 
         # The function returns a list of rectangles in which it believes it found a face. 
